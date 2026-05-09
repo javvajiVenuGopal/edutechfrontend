@@ -63,7 +63,7 @@ useEffect(() => {
       if (!token) return;
 
       const res = await fetch(
-        "http://127.0.0.1:8000/notifications/unread-count",
+        "http://seniorguide.exameets.com/notifications/unread-count",
         {
           headers: {
             Authorization: `Bearer ${token}`
