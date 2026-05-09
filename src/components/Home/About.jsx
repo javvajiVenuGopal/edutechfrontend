@@ -69,7 +69,7 @@ export default function AboutUs() {
 
   return (
     <div className="min-h-screen mt-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
-      {/* Animated Background Elements */}
+   
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-orange-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-orange-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
@@ -93,15 +93,7 @@ export default function AboutUs() {
                 <p className="text-sm text-gray-500">Trusted Peer-to-Peer Guidance Platform</p>
               </div>
             </div>
-            <div className="hidden md:flex items-center gap-3">
-              <div className="flex items-center gap-2 px-3 py-1.5 bg-green-50 rounded-full">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                </span>
-                <span className="text-sm font-medium text-green-700">500+ Active Guides</span>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -109,10 +101,7 @@ export default function AboutUs() {
       <div className="relative max-w-6xl mx-auto px-6 py-12">
         {/* Hero Section with Animation */}
         <div className={`text-center mb-20 transition-all duration-1000 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
-          <div className="inline-flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-full mb-6 animate-bounce-slow">
-            <span className="w-2 h-2 bg-[#ff6b35] rounded-full animate-pulse"></span>
-            <span className="text-sm font-medium text-[#ff6b35]">Since 2024 • Trusted by Thousands</span>
-          </div>
+         
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">About </span>
             <span className="bg-gradient-to-r from-[#ff6b35] to-orange-500 bg-clip-text text-transparent animate-gradient">SeniorGuide</span>
@@ -130,11 +119,7 @@ export default function AboutUs() {
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
               <div className="h-1.5 bg-gradient-to-r from-[#ff6b35] to-orange-400 group-hover:h-2 transition-all duration-300"></div>
               <div className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-lg">
-                  <svg className="w-8 h-8 text-[#ff6b35] animate-float" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
+             
                 <h2 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-[#ff6b35] transition-colors">Our Mission</h2>
                 <p className="text-gray-600 leading-relaxed">
                   Our mission is to provide trusted peer-to-peer guidance for students
@@ -156,14 +141,9 @@ export default function AboutUs() {
           <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-200">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
               <div className="h-1.5 bg-gradient-to-r from-[#ff6b35] to-orange-400 group-hover:h-2 transition-all duration-300"></div>
-              <div className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:shadow-lg">
-                  <svg className="w-8 h-8 text-[#ff6b35] animate-float" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                  </svg>
-                </div>
-                <h2 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-[#ff6b35] transition-colors">Our Vision</h2>
+              <div className="p-9">
+               
+                <h2 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-[#ff6b35] transition-colors pb-4">Our Vision</h2>
                 <p className="text-gray-600 leading-relaxed">
                   We aim to build India's most trusted student guidance ecosystem where
                   seekers can confidently connect with experienced seniors for
@@ -196,25 +176,19 @@ export default function AboutUs() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                ),
+                
                 title: "Verified Guidance",
                 description: "Every SeniorGuide completes manual ID verification before helping students on the platform.",
                 delay: 0,
               },
               {
-                icon: (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                ),
+              
                 title: "Affordable Access",
                 description: "Students can book expert sessions at an accessible ₹99 support fee.",
                 delay: 200,
               },
               {
-                icon: (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                ),
+                
                 title: "Secure Platform",
                 description: "All communication stays protected. We never share personal contact details between users.",
                 delay: 400,
@@ -222,15 +196,11 @@ export default function AboutUs() {
             ].map((feature, idx) => (
               <div
                 key={idx}
-                className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700"
+                className="animate-on-scroll  opacity-0 translate-y-8 transition-all duration-700"
                 style={{ transitionDelay: `${feature.delay}ms` }}
               >
-                <div className="bg-white rounded-2xl shadow-lg p-6 text-center group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 cursor-pointer">
-                  <div className="w-20 h-20 bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:bg-gradient-to-br group-hover:from-[#ff6b35] group-hover:to-orange-500 transition-all duration-500 group-hover:shadow-xl">
-                    <svg className="w-10 h-10 text-[#ff6b35] group-hover:text-white transition-colors duration-500 animate-float" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      {feature.icon}
-                    </svg>
-                  </div>
+                <div className="bg-white  rounded-2xl shadow-lg p-6 text-center group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 cursor-pointer">
+                 
                   <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-[#ff6b35] transition-colors">
                     {feature.title}
                   </h3>
@@ -290,19 +260,15 @@ export default function AboutUs() {
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-white/5 rounded-full animate-float-slow"></div>
                 </div>
                 <div className="relative z-10">
-                  <div className="w-24 h-24 bg-white/20 rounded-2xl flex items-center justify-center mb-6 animate-float">
-                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                  </div>
+               
                   <h3 className="text-3xl font-bold text-white mb-3">Join Our Community</h3>
                   <p className="text-orange-100 mb-6 max-w-sm">
                     Become part of India's fastest growing student guidance network
                   </p>
                   <div className="flex items-center justify-center gap-2 text-white/80 text-sm">
-                    <span>✨ 5000+ active students</span>
-                    <span className="w-1 h-1 bg-white/50 rounded-full"></span>
-                    <span>⭐ 4.9 rating</span>
+                    <span> 5000+ active students</span>
+                  
+                    <span>  Rating 4.9</span>
                   </div>
                 </div>
               </div>
@@ -332,12 +298,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="mt-16 pt-8 border-t border-gray-200 text-center">
-          <p className="text-gray-400 text-sm">
-            © 2024 SeniorGuide • Making education accessible for everyone
-          </p>
-        </div>
+       
       </div>
 
       <style jsx>{`
